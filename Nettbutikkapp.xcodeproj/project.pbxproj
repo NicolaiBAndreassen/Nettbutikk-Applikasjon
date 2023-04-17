@@ -14,6 +14,12 @@
 		E02EDD0C29BF5B9B0007408C /* NettbutikkappTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E02EDD0B29BF5B9B0007408C /* NettbutikkappTests.swift */; };
 		E02EDD1629BF5B9B0007408C /* NettbutikkappUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E02EDD1529BF5B9B0007408C /* NettbutikkappUITests.swift */; };
 		E02EDD1829BF5B9B0007408C /* NettbutikkappUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E02EDD1729BF5B9B0007408C /* NettbutikkappUITestsLaunchTests.swift */; };
+		E04373FB29D189C30029DF76 /* getUsers.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04373FA29D189C30029DF76 /* getUsers.swift */; };
+		E04373FD29D18AFB0029DF76 /* UserInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04373FC29D18AFB0029DF76 /* UserInformation.swift */; };
+		E05B974829C895FD0001BB50 /* getProducts.swift in Sources */ = {isa = PBXBuildFile; fileRef = E05B974729C895FD0001BB50 /* getProducts.swift */; };
+		E0FA269629D79D5E00509F5F /* ShoppingCart.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0FA269529D79D5E00509F5F /* ShoppingCart.swift */; };
+		E0FA269829D860A900509F5F /* getCart.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0FA269729D860A900509F5F /* getCart.swift */; };
+		E0FA269C29D8F78200509F5F /* ChooseUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0FA269B29D8F78200509F5F /* ChooseUser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +50,12 @@
 		E02EDD1129BF5B9B0007408C /* NettbutikkappUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NettbutikkappUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E02EDD1529BF5B9B0007408C /* NettbutikkappUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NettbutikkappUITests.swift; sourceTree = "<group>"; };
 		E02EDD1729BF5B9B0007408C /* NettbutikkappUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NettbutikkappUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E04373FA29D189C30029DF76 /* getUsers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = getUsers.swift; sourceTree = "<group>"; };
+		E04373FC29D18AFB0029DF76 /* UserInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInformation.swift; sourceTree = "<group>"; };
+		E05B974729C895FD0001BB50 /* getProducts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = getProducts.swift; sourceTree = "<group>"; };
+		E0FA269529D79D5E00509F5F /* ShoppingCart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingCart.swift; sourceTree = "<group>"; };
+		E0FA269729D860A900509F5F /* getCart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = getCart.swift; sourceTree = "<group>"; };
+		E0FA269B29D8F78200509F5F /* ChooseUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseUser.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +106,9 @@
 		E02EDCF929BF5B980007408C /* Nettbutikkapp */ = {
 			isa = PBXGroup;
 			children = (
+				E0FA26A329DA165700509F5F /* Get */,
+				E0FA26A129DA161800509F5F /* Views */,
 				E02EDCFA29BF5B980007408C /* NettbutikkappApp.swift */,
-				E02EDCFC29BF5B980007408C /* ContentView.swift */,
 				E02EDCFE29BF5B9B0007408C /* Assets.xcassets */,
 				E02EDD0029BF5B9B0007408C /* Preview Content */,
 			);
@@ -125,6 +138,27 @@
 				E02EDD1729BF5B9B0007408C /* NettbutikkappUITestsLaunchTests.swift */,
 			);
 			path = NettbutikkappUITests;
+			sourceTree = "<group>";
+		};
+		E0FA26A129DA161800509F5F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E02EDCFC29BF5B980007408C /* ContentView.swift */,
+				E04373FC29D18AFB0029DF76 /* UserInformation.swift */,
+				E0FA269B29D8F78200509F5F /* ChooseUser.swift */,
+				E0FA269529D79D5E00509F5F /* ShoppingCart.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E0FA26A329DA165700509F5F /* Get */ = {
+			isa = PBXGroup;
+			children = (
+				E04373FA29D189C30029DF76 /* getUsers.swift */,
+				E0FA269729D860A900509F5F /* getCart.swift */,
+				E05B974729C895FD0001BB50 /* getProducts.swift */,
+			);
+			path = Get;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +291,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E05B974829C895FD0001BB50 /* getProducts.swift in Sources */,
+				E04373FD29D18AFB0029DF76 /* UserInformation.swift in Sources */,
+				E0FA269829D860A900509F5F /* getCart.swift in Sources */,
 				E02EDCFD29BF5B980007408C /* ContentView.swift in Sources */,
+				E0FA269C29D8F78200509F5F /* ChooseUser.swift in Sources */,
 				E02EDCFB29BF5B980007408C /* NettbutikkappApp.swift in Sources */,
+				E04373FB29D189C30029DF76 /* getUsers.swift in Sources */,
+				E0FA269629D79D5E00509F5F /* ShoppingCart.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
